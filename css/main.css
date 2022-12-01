@@ -1,0 +1,28 @@
+:root{
+  --color1:#f5f0ed;
+  --color2:#241d1b;
+  --color3:#d03b40;
+  --color4:#ded6c0;
+  --color5:#3c3c3b;
+  --backgroundMenu:rgba(208, 59, 64, 0.9);
+  --backgroundScroll: rgba(208,59,64,1) ;
+  --fontNav:calc(0.4rem + 1vh);
+  --fontsizeTitle1:  calc(0.7rem + 1vh);
+  --fontsizeLink:calc(0.6rem + 1vh);
+  --fontsizeTitle2:  calc(0.5rem + 1vh);
+  --fontsizeParrafo: calc(0.3rem + 1vh);
+  --sectionHeight: 45vh;
+}
+
+/*Mobile first*/
+
+html,body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans',sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color:var(--color1);
+}

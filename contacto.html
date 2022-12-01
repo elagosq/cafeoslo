@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+  <head>
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-with, initial-scale=1.0">
+  	<title>Cafe - Oslo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/contacto.css">
+    <script defer type="text/javascript" src="js/app.js"></script>
+    <script defer type="text/javascript" src="js/navegation-scroll.js"></script>
+  </head>
+  <body>
+   <main> 
+    <header class="topheader">
+  	  	<img src="imagenes/Fondo1.jpg" class="imagen-background">
+  	    <!-- Menu de Navegación -->
+  	  	<nav class="topnav">
+         <a href="index.html" class="logo">
+           <img src="imagenes/Logo.png"  width="160" height="40" alt="Logo Cafe-Oslo" />
+         </a>
+         <button class="open-menu" id="open-menu" arial-label="Abrir menú">
+           <i class="fa fa-bars"></i>
+         </Button>
+         <ul class="menu" id="menu">
+           <Button class="close-menu" id="close-menu">
+             <i class="fa fa-times-circle" aria-hidden="true"></i>
+           </Button>
+  	  	  	<li>
+  	  	  	  <a href="index.html" class="selected">Inicio</a>
+  	  	  	</li>
+  	  	  	<li>
+  	  	  	  <a href="">El espacio</a>
+  	  	  	</li>
+  	  	  	<li>
+  	  	  	  <a href="productos.html">Productos</a>
+  	  	  	</li>
+  	  	  	<li>
+  	  	  	  <a href="reserva.html">Reserva</a>
+  	  	  	</li>
+  	  	  	<li>
+  	  	  	  <a href="contacto.html">Contacto</a>
+  	  	  	</li>
+          </ul>	
+  	  	</nav>
+        <div class="contenido">
+           <h1 class="titulo">CONTACTO</h1>
+           <p class="parrafo">Chocolate cake chocolate cake pie candy canes chocolate cake bonbon.love marzipan liquorice I love
+            Pie danish macaroon ice cream ice cream. Bonbon sweet bombon jelly beans jelly-o I love lollipop.</p>
+        </div>	
+  	   </header>	
+      <!-- reservas -->
+      <section class="contacto">
+        <div class="info-contacto">
+          <div class="direcccion">
+           <h3>Dirección</h3>
+           <p>C/Mayor, 15 </br> 
+             0000 Barcelona
+           </p>
+            <h3>Horario de Atención</h3>
+            <p>09:00 hrs a 18:00 hrs de lunes a viernes</br>
+               11:00 hrs a 18:00 hrs los sabados 
+            </p>
+          </div>
+          <form>
+              <input type="text" id="nombrecomleto" name="nombrecompleto" placeholder="Nombre Completo" /> 
+              <input type="email" id="e-mail" name="e-mail" placeholder="Email" />
+              <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" />
+              <textarea placeholder="Mensaje....."  rows="4" cols="40"></textarea>  
+              <input type="submit" value="Reservar" class="reserva-submit" />
+           </form>
+        </div> 
+        <div class="contenedor-mapa">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.698809958747!2d2.0172486157489082!3d41.31541540841629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49cf05035a437%3A0xf74f81e3db90b2f5!2sCalle%20Mayor%2C%2015%2C%2008840%20Viladecans%2C%20Barcelona%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2scl!4v1606660150520!5m2!1ses-419!2scl" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+       </div>
+      </section>
+     <!-- Redes Sociales -->
+      <section class="redes-sociales">
+        <img src="Imagenes/Fondo3.jpg">
+        <div class="container-redes">
+          <h2>SIGUENOS</h2>
+          <h3>EN NUESTRAS REDES SOCIALES</h3>
+          <div class="contenedor-icon">
+            <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </section>
+      <!-- Reserva - Contacto -->
+      <section class="reserva-contacto">
+       <div class="reservas reserva">
+         <h2>CONTACTA CON</h2>
+         <h3>NOSOTROS</h3>
+         <p>Si quiere hacer una reserva hoy?</p>
+         <a href="reserva.html" class="button button-reserva">Reserva</a>
+      </div>
+      <div class="reservas contacto">
+         <h2>¿SABES DÓNDE</h2>
+         <h3>ESTAMOS?</h3>
+         <a href="contacto.html" class="button button-contacto">Contacto</a>
+      </div>
+      </section>
+      <footer class="pie">
+         <p>Cafe Oslo - 2022</p>
+         <p>Todos los derechos reservados</p>
+      </footer>
+    </main>  
+  </body>	
+</html>	

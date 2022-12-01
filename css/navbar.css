@@ -1,0 +1,181 @@
+/*Header y navegación mobile*/
+.topheader{
+ background: linear-gradient(38deg,var(--color2),var(--color3));
+ width: 100%;
+ height: 50vh;
+ overflow: hidden;
+}
+
+.topheader > .imagen-background{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  opacity: 0.4;
+  filter: grayscale(100%);
+}
+
+.topheader > .topnav{
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.topheader > .topnav > .menu{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  position: fixed;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 100%;
+  padding: 0;
+  margin:0;
+  transition: left 0.3s;
+  background-color: var(--backgroundMenu);
+  overflow-y: auto;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.topheader > .topnav > .menu > li > a{
+  color: var(--color1);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 4rem;
+  text-transform: uppercase;
+}
+
+.open-menu{
+  color: var(--color1);
+  font-size: 2rem;
+}
+
+.close-menu{
+  color: var(--color1);
+  font-size: 2rem;
+  align-self: flex-end;
+  padding: 1.2rem 1.4rem;
+}
+
+.open-menu,
+.close-menu{
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.topheader > .topnav > .menu.menu_opened{
+  visibility: visible;
+  left: 0;
+  pointer-events: all;
+}
+
+.open-menu:focus:not(:focus-visible),
+.close-menu:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.topheader > .topnav > .menu > li > a:hover,
+.topheader > .topnav > .menu > li > a.selected{
+  color: var(--color4);
+}
+
+.topheader > .contenido{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 10rem;
+  right: 0;
+  left: 0;
+  padding: 0 4rem;
+}
+
+.topheader > .contenido > .titulo{
+  font-size: var(--fontSizeTitle);
+  color: var(--color1);
+  font-weight: bold;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid var(--color1);
+}
+
+.topheader > .contenido > .parrafo{
+  font-size: var(--fontsizeParrafo);
+  color: var(--color1);
+}
+
+/*navegación scroll*/
+.topheader > .topnav.scroll{
+  background-color: var(--backgroundScroll);
+}
+
+
+/*Header y Navegación Desktop*/
+
+@media (min-width: 992px){
+
+.topheader > .topnav >  .menu{
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   flex-direction: row;
+   justify-content: flex-end;
+   visibility: visible;
+   background-color: transparent;
+   pointer-events: all;
+   overflow-y: hidden;
+}
+
+.topheader > .topnav > .menu > li{
+  padding: 0 0.5rem;
+}
+
+.topheader > .topnav > .menu > li > a{ 
+ line-height: 5rem;
+ position: relative;
+}
+
+.topheader > .topnav > .menu > li > a.selected{
+  color: var(--color1);
+}
+
+.topheader > .topnav > .menu > li > a::after{
+  content: "";
+  background-color: var(--color1);
+  position: absolute;
+  left: 0;
+  top: calc(100% + 4px);
+  width: 100%;
+  height: 4px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.topheader > .topnav > .menu > li > a.selected::after,
+.topheader > .topnav > .menu > li > a:hover::after{
+  opacity: 0.8;
+}
+
+.topheader > .topnav > .menu > li > a:hover{
+  color: var(--color4);
+}
+
+.open-menu,
+.close-menu{
+  display: none;
+ }
+
+.open-menu:focus:not(:focus-visible),
+.close-menu:focus:not(:focus-visible) {
+  outline: none;
+ }
+}

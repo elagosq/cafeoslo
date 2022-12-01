@@ -1,0 +1,55 @@
+.productos{
+  padding: 2rem;
+  height: 100%;
+}
+
+.productos > .container-productos{
+  max-width: 992px;
+  margin: 0 auto;
+  display: grid;
+ /* grid-template-columns: repeat(auto-fit, minmax(min(100%,20rem),1fr));*/
+  grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+ /* grid-auto-flow: dense;*/
+  grid-auto-rows: 22rem;
+  gap: 1.2rem;
+}
+
+.productos > .container-productos > .contenedor-imagen-producto{
+	background: linear-gradient(60deg,var(--color2),var(--color3));
+  width: 100%;
+	height: 100%;
+  position: relative;
+}
+
+.productos > .container-productos > .contenedor-imagen-producto > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  opacity: 0.4;
+  filter: grayscale(50%);
+}
+
+.productos > .container-productos > .contenedor-imagen-producto > .contenido-producto{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.productos > .container-productos > .contenedor-imagen-producto > .contenido-producto > h2{
+  font-size: var(--fontsizeTitle1);
+  font-weight: bold;
+  color: var(--color1);
+  text-transform: uppercase;
+}
+
+.productos > .container-productos > .contenedor-imagen-producto > .contenido-producto > p{
+  color: var(--color1);
+  text-align: justify;
+  hyphens: auto;
+}
