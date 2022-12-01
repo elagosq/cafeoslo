@@ -1,6 +1,8 @@
 # Cafe oslo
 
-<p align="justify">Cafe oslo es una cafetería ficticia, que se desarrollo en html5,css3(css grid,flexbox,media queries)</p>
+<p align="justify">Cafe oslo es una cafetería ficticia, que se desarrollo en html5,css3(css grid,flexbox,media queries)</br></br>
+https://cafe-oslo-web.netlify.app/
+</p>
 
 # 1.-Home
 <img src="https://github.com/elagosq/cafeoslo/blob/master/1-home.jpg" width="600" height="600" />
